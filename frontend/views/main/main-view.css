@@ -1,0 +1,23 @@
+#header {
+    height: var(--lumo-size-xl);
+    box-shadow: var(--lumo-box-shadow-s);
+}
+#header vaadin-avatar {
+    margin-left: auto;
+    margin-right: var(--lumo-space-m);
+    visibility: hidden;
+}
+#header h1 {
+    font-size: var(--lumo-font-size-l);
+    margin: 0;
+}
+
+
+vaadin-tab:hover {
+    background-color: var(--lumo-contrast-5pct);
+}
+
+vaadin-tab[selected] {
+    background-color: var(--lumo-primary-color-10pct);
+    color: var(--lumo-primary-text-color);
+}
