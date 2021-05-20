@@ -64,7 +64,7 @@ public class MainView extends AppLayout {
         H1 title = new H1("Company Name");
         logoLayout.add(title);
         logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
-        //layout.setAlignItems(FlexComponent.Alignment.valueOf());
+
         layout.add(logoLayout, menu);
         return layout;
     }

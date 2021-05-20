@@ -9,13 +9,11 @@ import java.util.Set;
 @Entity
 public class Flight {
     @Id
-   // @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long flightId;
     private int flightNumber;
     private char[] departureAirportIATACode;
     private char[] arrivalAirportIATACode;
     private String departureDate;
-    //private Date departureDate; as reference to the table
 
     @OneToMany
     private Set<Baggage> baggages;

@@ -136,7 +136,7 @@ public class IATARequest extends HorizontalLayout {
 
     private void createResultDialog(){
         Dialog result = new Dialog();
-        //result.setWidth(50, Unit.PERCENTAGE);
+
         VerticalLayout layout = new VerticalLayout();
         layout.add(new Text("Search Results"));
 

@@ -56,17 +56,14 @@ public class FlightNumberRequest extends HorizontalLayout {
         VerticalLayout layout = new VerticalLayout();
 
         HorizontalLayout flightNumLayout = new HorizontalLayout();
-        //flightNumDescr = new Text("Flight Number");
         flightNumber = new IntegerField();
         flightNumber.setMin(1000);
         flightNumber.setMax(9999);
         flightNumber.setLabel("Flight number");
-        //flightNumber.setValue(1000);
         flightNumLayout.add(flightNumber);
         flightNumLayout.setPadding(true);
 
         HorizontalLayout dateLayout = new HorizontalLayout();
-        //dateDescr = new Text("Flight date");
         datePicker = new DatePicker(LocalDate.now());
         datePicker.setLabel("Flight date");
 
@@ -94,7 +91,6 @@ public class FlightNumberRequest extends HorizontalLayout {
         icon = new Icon(VaadinIcon.SEARCH);
         icon.setColor("blue");
         searchButton = new Button("Search" ,icon);
-        //searchButton.setWidth(25, Unit.PERCENTAGE);
         searchLayout.add(searchButton);
         searchLayout.setPadding(true);
         searchLayout.setAlignItems(Alignment.STRETCH);
@@ -258,7 +254,7 @@ public class FlightNumberRequest extends HorizontalLayout {
             createResultDialog();
         }
         catch (Exception exception){
-            Dialog dialog = new Dialog(new Text(/*"Error occurred. Please try again later"*/exception.toString()));
+            Dialog dialog = new Dialog(new Text("Error occurred. Please try again later"));
             dialog.open();
         }
 

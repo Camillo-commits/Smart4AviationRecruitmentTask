@@ -8,7 +8,6 @@ public class Smart4aviationApplication {
 
     public static void main(String[] args) {
         LaunchUtil.launchBrowserInDevelopmentMode(SpringApplication.run(Smart4aviationApplication.class, args));
-        //SpringApplication.run(Smart4aviationApplication.class, args);
     }
 
 }
