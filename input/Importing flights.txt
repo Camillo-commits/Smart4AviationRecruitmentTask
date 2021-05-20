@@ -1,0 +1,47 @@
+To import flights simply send http POST request to the address below:
+
+ - http://localhost:8080/flight
+
+This functionality was tested on postman as a http request sender.
+
+This request takes a list of flights in a body.
+
+Example:
+
+[
+  {
+    "flightId": 0,
+    "flightNumber": 2990,
+    "departureAirportIATACode": "YYZ",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2019-10-13T06:07:44-02:00"
+  },
+  {
+    "flightId": 1,
+    "flightNumber": 1714,
+    "departureAirportIATACode": "LAX",
+    "arrivalAirportIATACode": "KRK",
+    "departureDate": "2017-11-29T01:08:04-01:00"
+  },
+  {
+    "flightId": 2,
+    "flightNumber": 8935,
+    "departureAirportIATACode": "ANC",
+    "arrivalAirportIATACode": "GDN",
+    "departureDate": "2019-06-09T06:28:33-02:00"
+  },
+  {
+    "flightId": 3,
+    "flightNumber": 6922,
+    "departureAirportIATACode": "SEA",
+    "arrivalAirportIATACode": "MIT",
+    "departureDate": "2014-08-23T01:58:53-02:00"
+  },
+  {
+    "flightId": 4,
+    "flightNumber": 3960,
+    "departureAirportIATACode": "YYZ",
+    "arrivalAirportIATACode": "LEW",
+    "departureDate": "2014-07-07T06:05:46-02:00"
+  }
+]
